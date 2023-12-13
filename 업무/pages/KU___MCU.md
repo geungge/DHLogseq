@@ -1,0 +1,35 @@
+- CAN
+  collapsed:: true
+	- M_INH 는 12V 인데 MPQ4324 EN PIN에 입력 되어도 되는 것인가?
+	- Tranceiver 상태
+		- Sleep
+			- INH = high-ohmic
+		- Standby
+			- Vbat 상승하면 INH = High
+			- STB_N = 1 , EN = 1  -> Normal Mode
+			- STB_N = 1 , EN = 0 -> Listen-only
+			- STB_N = 0 , EN = 1 -> Sleep Mode  (Wake flag not set)
+			- STB_N = 0 , EN = 0 -> Standby mode 유지
+		- Normal
+			- STB_N : High
+			- EN : High
+			- INH : HIgh
+		- Listen-only
+			- receiver enabled
+			- transmitter disabled
+			- INH : High
+			- STB_N : High
+			- EN : Low
+	- Wakeup
+		- Local Wakeup (via WAKE pin)
+		- Remote Wateup (via the CAN bus)
+	- bringup
+		- scope 로 baudrate 측정
+			- 1Mbps = 1use , 500kbps = 2usec
+			- ACK bit가 2usec이면 500kbps
+			- [오실로스코프로 baudrate를 측정 : 네이버 지식iN (naver.com)](https://m.kin.naver.com/mobile/qna/detail.nhn?d1Id=11&dirId=1118&docId=391979310)
+- ### ADC
+	- 용어
+		- BCTU : Performs advanced ADC triggering
+		- eMIOS : genrate PWM , Measures time-based digital inputs
+	-

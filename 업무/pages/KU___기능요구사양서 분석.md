@@ -1,0 +1,58 @@
+- ![기능요구사양서(V.004)](C:\Project\KU_PE\doc\spec\SAL_Master_v_0_04.pdf)
+- ### CAN Signal 문의
+  collapsed:: true
+	- L_SAL_FD_01_200ms
+		- L_SAL_FD_AlvCnt1Val
+		- L_SAL_FD_Crc1Val
+	- L_BDC_FD_01_200ms
+		- L_BDC_FD_AlvCnt1Val
+		- L_BDC_FD_Crc1Val
+	- 범위 밖의 값을 수신 시에는 무시하는가?
+- ### 사양 문의 사항
+	- 공통
+		- 이벤트로 간주한다 함은, ON 후 바로 OFF가 되어도 기존 동작을 마무리 하여야 하나?
+	- SAL-LBC
+		- ((6578fbd6-95cf-46ab-be13-009f4c945e69))
+			- Output_LIN_Brightness == 0x64
+			- 0x64 이면 최대값이 250 이므로 40%에 해당하는 값인가? 아니면 100%라는 의미인가?
+		- ((65790ef7-0420-45f8-ab24-c0fef09b7ced))
+			- colormode = normal , brightmode = therapy -> 테라피모드
+			- colormode = therapy , brightmode = normal ->
+		- ((6578fddf-5ddc-40c3-93b7-0c0b64c2b5b6))
+			- Input_m_MLBrightValue 와 Input_INT_MLBrightValue 차이?
+				- Input_INT_MLBrightValue : 0x0A까지
+				- Input_m_MLBrightValue : 0x0B까지
+				- CAN DB : 0x0A
+		- ((657900d9-44f6-48b1-9155-08149d6f5d85))
+			- 1번 조건은 노말모드와 과속모드 밝기 컨트롤로 명시
+			  실제 조건 값에는 VehicleOverSpeed 모드만 명시
+			- 그래프가 로그함수 모양으로 되어있는데 지수함수 모양이어야 하는 것 아닌가?
+		- 밝기 값이 적용되는 모드
+			- 밝기 값은 Bright모드에서 야간주행모드,노말 모드,과속모드 에서만 유효?
+			  id:: 657901b0-e71a-44ee-9c90-2b81f6f75f31
+		- ((6579095b-17ae-4dd8-95c1-a001a095f1ff))
+			- DriveComfortMode로 기재되어있는데 CAN DB는 DriveNormalMode
+		- DriveNMode (0x0D) 의 색상이 없다
+	- SAL-LFC
+	- SAL-WGS
+		- 웰컴(WGS,ERS) 중에는 최대밝기로 표시하다가 웰컴 해제시 원래 설정 밝기로 돌아가는데 맞는가?
+		- ((65790d87-a805-4d75-91e4-aedac7f27275))
+			- ColorMode가 boost ,overspeed, therapy 일경우 동작하지 않아야하는가? -> 그렇다면 미구현 상태
+	- SAL-OSS
+		- OverSpeed On 상태에서 Color모드가 0x01,0x02만 언급되어 있는데 그 외의 값이 들어오면 어떻게 해야하나?
+	- SAL-AVS
+		- 시나리오 사양이 없다
+	- SAL-DMS
+		- ((65792ed9-2b45-4632-b28c-f54ec60ef5a3))
+			- MLColorMode가 7 ~ E 가 아닌경우
+				- 1,2 (vehicle,overspeed) : OFF
+				- 3~6 (therapy)
+	- SAL-ACS
+		- ((65792fbc-2c85-4e8f-afbf-22340821283e))
+			- MLColorMode가 1,2 이면 ?
+		- AirCleaningSeqModeCmd가  1,6 이면?
+-
+-
+-
+-
+-

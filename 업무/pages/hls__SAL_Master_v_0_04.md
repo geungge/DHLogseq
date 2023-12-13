@@ -1,0 +1,63 @@
+file:: [SAL_Master_v_0_04.pdf](C:\Project\KU_PE\doc\spec\SAL_Master_v_0_04.pdf)
+file-path:: C:\Project\KU_PE\doc\spec\SAL_Master_v_0_04.pdf
+
+- SAL-SBS-01
+  ls-type:: annotation
+  hl-page:: 14
+  hl-color:: yellow
+  id:: 656d4263-7a2d-4fb7-ab88-b092b57e4380
+- SAL-CMS-01]
+  ls-type:: annotation
+  hl-page:: 21
+  hl-color:: yellow
+  id:: 656d427b-4584-4cc5-930e-6049f0185099
+- SAL-VST
+  ls-type:: annotation
+  hl-page:: 23
+  hl-color:: yellow
+  id:: 656d42df-8600-45c2-8946-9c486713ea6d
+- SAL-LBC-02
+  ls-type:: annotation
+  hl-page:: 29
+  hl-color:: purple
+  id:: 6578fbd6-95cf-46ab-be13-009f4c945e69
+- SAL-LBC-05
+  ls-type:: annotation
+  hl-page:: 30
+  hl-color:: purple
+  id:: 6578fddf-5ddc-40c3-93b7-0c0b64c2b5b6
+- SAL-LBC-06
+  ls-type:: annotation
+  hl-page:: 30
+  hl-color:: purple
+  id:: 657900d9-44f6-48b1-9155-08149d6f5d85
+- SAL-LCC-08
+  ls-type:: annotation
+  hl-page:: 35
+  hl-color:: purple
+  id:: 6579095b-17ae-4dd8-95c1-a001a095f1ff
+- SAL-WGS-08
+  ls-type:: annotation
+  hl-page:: 59
+  hl-color:: purple
+  id:: 65790d87-a805-4d75-91e4-aedac7f27275
+- SAL-LBC-03
+  ls-type:: annotation
+  hl-page:: 29
+  hl-color:: purple
+  id:: 65790ef7-0420-45f8-ab24-c0fef09b7ced
+- [SAL-DMS-02
+  ls-type:: annotation
+  hl-page:: 75
+  hl-color:: purple
+  id:: 65791f17-c646-4ed3-b105-f2c7aed8b3e4
+- SAL-DMS-05
+  ls-type:: annotation
+  hl-page:: 77
+  hl-color:: purple
+  id:: 65792ed9-2b45-4632-b28c-f54ec60ef5a3
+- SAL-ACS-02
+  ls-type:: annotation
+  hl-page:: 78
+  hl-color:: purple
+  id:: 65792fbc-2c85-4e8f-afbf-22340821283e

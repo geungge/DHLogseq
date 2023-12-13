@@ -1,0 +1,109 @@
+- 이전자료
+	- 링크
+		- [새로운 통신 버스 CAN FD Light (autoelectronics.co.kr)](https://www.autoelectronics.co.kr/article/articleView.asp?idx=3557)
+		- [오토사(AUTOSAR) : AUTomotive Open System ARchitecture (tistory.com)](https://rakuraku.tistory.com/319)
+		- [AUTOSAR - Overview (tistory.com)](https://mechanical-software.tistory.com/33)
+		- [AUTOSAR (AUTomobile Open Software ARchitecture) > 도리의 디지털라이프 (skby.net)](https://blog.skby.net/autosar-automobile-open-software-architecture/)
+		- [왜 ISELED를 사용해야 할까? (특징 및 .. : 네이버블로그 (naver.com)](https://blog.naver.com/realdani/221797373073)
+		- https://hy-park.tistory.com/category/NXP
+		- [EB tresos를 이용한 AUTOSAR 4.0 개발방법 (autoelectronics.co.kr)](https://www.autoelectronics.co.kr/article/articleView.asp?idx=958)
+	- NXP
+		- ADK :  ISELED application development kit (ADK)
+		- S32K144
+		- 설치
+			- S32 Design Studio for S32 Platform 3.5
+				- 왜 GCC 버전이 여러개 일까? 10.2 12.1 9.2
+				- S32K3 Developement Package
+				- SW32K3_RTD_x.x_exe
+				- SW32K3_RTD_x.x_...DS_updatesite_2008.zip
+			- RTD : Real Time Driver
+		- [EB tresos를 이용한 AUTOSAR 4.0 개발방법 (autoelectronics.co.kr)](https://www.autoelectronics.co.kr/article/articleView.asp?idx=958)
+		- [NXP S32K-ISELED LED Lighting Solution - Review - element14 Community](https://community.element14.com/products/roadtest/rv/roadtest_reviews/843/nxp_s32k-iseled_led_1)
+		- [ISELED SDK 4.0.1 example show SDK S32K144_SDK_4.0.... - NXP Community](https://community.nxp.com/t5/S32-SDK/ISELED-SDK-4-0-1-example-show-SDK-S32K144-SDK-4-0-0-PATH-is-not/m-p/1240607#M2099)
+	- 설치
+	- SAL 기능
+	  collapsed:: true
+		- INLC100Q16
+		- CAN FD
+			- BDC와 통신
+			- 통신 오류 판단
+		- LIN
+			- MLS와 통신
+			- 통신 오류 판단
+		- 업데이트
+		- 보정제어
+		- MISRA
+		- 변경이력 추적
+		- 메모리 정합성
+		- 파워모드 (Wakeup Sleep)
+		- Watchdog
+		-
+	- JLINK
+	  collapsed:: true
+		- [OpenSDA User Guide Datasheet by NXP USA Inc. | Digi-Key Electronics (digikey.com)](https://www.digikey.com/htmldatasheets/production/1307252/0/0/1/opensda-user-guide.html)
+		- [i.MX RT1052 Arch Mix - J-Link CDC : 네이버 블로그 (naver.com)](https://m.blog.naver.com/chcbaram/221847923175)
+		- [[STM32] J-Link + IAR로 업로드 및 디버깅하기 : 네이버 블로그 (naver.com)](https://m.blog.naver.com/chandong83/221566872971)
+		- UART : PTA15 / PTA16
+	- 의미파악 필요
+	  collapsed:: true
+		- SAL 제어기는 BDC 제어기에의한 Remote Wake up이가능해야 한다.단 BDC제어기는 SAL 제어기에 의한
+		  Remote Wake up 되지 않는다.
+			- **Remote Wakeup 신호:** 다른 CAN 노드에서 특별한 신호를 보내어 절전 모드에 있는 장치를 깨울 수 있습니다. 이 신호는 Remote Wakeup 프레임으로 알려져 있습니다. 이 프레임은 일반적인 데이터 프레임과 다르며, 특별한 비트 패턴을 포함하고 있습니다.
+		- SIUL : System integration unit lite
+	- FLEX IO
+	  collapsed:: true
+		- [Understanding FlexIO - NXP Community](https://community.nxp.com/t5/Kinetis-Microcontrollers/Understanding-FlexIO/ta-p/1115419)
+	- NXP Peripheral
+	  collapsed:: true
+		- ['Embedded SW/[NXP] Embedded SW Project' 카테고리의 글 목록 (tistory.com)](https://embeddedchallenge.tistory.com/category/Embedded%20SW/%5BNXP%5D%20Embedded%20SW%20Project)
+		- ['NXP' 카테고리의 글 목록 :: 임베디드 학습 저장소 (tistory.com)](https://hy-park.tistory.com/category/NXP)
+		- [AN12174: Using FlexIO to emulate communications and timing peripherals – Application Note (nxp.com)](https://www.nxp.com/docs/en/application-note/AN12174.pdf)
+		- [AN5413: S32K1xx Series Cookbook – Application Note (nxp.com)](https://www.nxp.com/docs/en/application-note/AN5413.pdf)
+		- [Getting Started with S32 Design Studio IDE | NXP Semiconductors](https://www.nxp.com/pages/getting-started-with-s32-design-studio-ide:TIP-S32DS-Extension-Package)
+		- [S32K3 Auto General-Purpose MCUs | NXP Semiconductors](https://www.nxp.com/products/processors-and-microcontrollers/s32-automotive-platform/s32k-auto-general-purpose-mcus/s32k3-microcontrollers-for-automotive-general-purpose:S32K3)
+	- FreeRtos
+	  collapsed:: true
+		- [HOWTO: Create FreeRTOS project in S32 Design Studi... - NXP Community](https://community.nxp.com/t5/S32-Design-Studio-Knowledge-Base/HOWTO-Create-FreeRTOS-project-in-S32-Design-Studio/ta-p/1099698)
+		- [S32SDK for S32K1xx RTM 3.0.0 - Release Notes (usermanual.wiki)](https://usermanual.wiki/m/cd50ec2357e52292b0997a9ca73d23de80fa921ac5d6bf20b99fde5e1db2655f)
+		-
+	- UART 소스 분석
+	  collapsed:: true
+		- PORT
+			- Port_Config
+				- Port_aUsedPinConfigs_BOARD_InitPeripherals
+				- g_pin_mux_InitConfigArr_BOARD_InitPeripherals
+				- GPIO포트 등록만 했더니 변화가 없고 MCAL Port에서 추가하니
+					- Siul2_Port_Ip_Cfg.h 에서
+						- NUM_OF_CONFIGURED_PINS 4->5
+					- Tpsc_Port_Ip_Cfg.h에서
+						- NUM_OF_OBE_GROUP_CONFIG 4->5
+					- Port_Cfg.h
+					- Port_aUnusedPads_BOARD_InitPeripherals 에서 해당 port 삭제됨
+					- Port_aUsedPinConfigs_BOARD_InitPeripherals 해당 port 추가
+					- aTspc_InitConfigArr_BOARD_InitPeripherals 뭔가 추가
+					- g_pin_mux_InitConfigArr_BOARD_InitPeripherals 해당 port 추가
+		- FLEX or UART 모드 설정 부분은?
+- ### 잊어버리지 말자
+  collapsed:: true
+	- 인터럽트 우선순위
+	- OS TASK 우선순위
+	- ISELED block command 시간
+	- CAN 32byte 시간
+	- 함수 리턴 처리
+	- local global
+	- can filter
+	- 함수naming : 어떤것인 _ 붙이고 안붙이고
+- nonAUTOSAR
+  collapsed:: true
+	- 미구현 기능
+		- dual color
+		- teraphy
+	- 확인 사항
+	- AirCleaingCmd
+		- 사양서에는 2~5 정의 되어있다 , 1,6,7이 들어오면 어떻게 하지?
+	- LIN
+		- color=boost , bright=off -> LIN은 계속 바뀜 , main은 꺼져있다
+		- LIN으로 보내는 밝기 정보 (max 강제 고정 시나리오는 br도 max로 보내야하나?)
+		- LIN으로 보내는 Fade Time 정보는?
+		- LIN Max brightness는? 부스트모드0x64는 최대값인가?
+		- 왜 ACS는 Lin Out  밝기가 없지?
