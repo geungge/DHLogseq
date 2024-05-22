@@ -1,0 +1,48 @@
+## 1일차
+collapsed:: true
+	- 전장 산업의 요구사항
+		- 현업 프로세스의 문제점
+			- 출시 (Release)
+				- 테스트 코드와 다르다 -> 형상관리가 중요하다
+			- 계획 (Plan)
+				- 고객 요구사항 장비 , 교육 등 미리 계획
+			- 검토 (Review)
+				- 형식적인 리뷰
+				- 리뷰 기록 관리 (예:체크리스트의 부재)
+			- 시험 (Test)
+				- 코드와 디자인 불일치 (대안:MBD)
+			- 의사소통 (Communication)
+				- 고객의 요구사항이 개발에 전달되지 않음
+				- 산출물,시점,수준 등에 대한 합의가 없음
+		- 요구
+			- IATF 16949  (안전,품질 관리)
+			- ASPICE (현재 3.1 , 4.1에서 HW포함)
+			- ISO 26262 (기능안전)
+			- ISO 21434 (Cyber Security)
+			- HARA , TARA ,...
+	- 제품 개발 절차
+		- IEC 61508 : 모든 산업의 표준 -> ISO26262(차량 기능안전)
+		- ISO 21448 : 의도된 기능의 안전성 (Safety Of The Intended Functionality)
+		- ISOPAS 5112 : audit 표준
+		- ISO FDIS2408 : 업데이트 표준
+	- 품질경영시스템
+		- QS9000
+			- 부품업체를 위한 품질 표준
+			- ISO 9001
+			- Sector-specific
+			- Customer-specific
+		- 미북,유럽... -> IATF ISO/TS 169494 : 1999 -> ISO/TS 16949:2002 -> ISO/TS 16949:2006
+		- IATF 16949 에 SW가 들어가 있는 경우 규정이 추가
+		- APQP (Advacned Product Quality Planning)
+	- 성숙도 모델
+		- 성숙도 모델
+		- CMM : Capability Maturity Model
+		- SPICE : Software Process Improvement and Capability dEtermination
+		- CMMI :Capability Maturity Model Integration
+	- HIS Scope -> VDA Scope
+	- IEC 61508 -> ISO 26262
+	- PM  CM QM
+- ##  SYS #1 , #2 (5/8)
+	- 자세히 써라
+	- RAE : requirement analys engineer
+	-

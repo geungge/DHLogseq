@@ -9,6 +9,7 @@
 		- L_BDC_FD_Crc1Val
 	- 범위 밖의 값을 수신 시에는 무시하는가?
 - ### 사양 문의 사항
+  collapsed:: true
 	- 공통
 		- 이벤트로 간주한다 함은, ON 후 바로 OFF가 되어도 기존 동작을 마무리 하여야 하나?
 	- SAL-LBC
@@ -51,7 +52,8 @@
 		- ((65792fbc-2c85-4e8f-afbf-22340821283e))
 			- MLColorMode가 1,2 이면 ?
 		- AirCleaningSeqModeCmd가  1,6 이면?
--
+- ### 미구현
+	- 시나리오 event 방식 처리
 -
 -
 -

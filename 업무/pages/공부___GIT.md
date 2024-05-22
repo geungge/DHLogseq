@@ -213,14 +213,42 @@
   collapsed:: true
 	- [Simple Git tutorial for beginners | Nulab](https://nulab.com/ko/learn/software-development/git-tutorial/)
 - 로컬 무시하고 최신 업데이트
+  collapsed:: true
 	- git fetch --all
 	  git reset --hard origin/master
 	  git pull origin master
 - ### merge
+  collapsed:: true
 	- [Git - 브랜치와 Merge 의 기초 (git-scm.com)](https://git-scm.com/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98%EC%99%80-Merge-%EC%9D%98-%EA%B8%B0%EC%B4%88)
 	- [[GIT] 병합(merge) 종류 별 완벽 설명 (tistory.com)](https://minemanemo.tistory.com/46)
 	- main 과 syc 병합
 		- git merge --no-ff syc   (syc->main)
+		- git merge --squash syc
+			- branch는 그대로 남아있고 branch를 하나의 id로 커밋
+		- git merge --ff syc
+		- git merge --ff-only syc
 	- main 을 remote 상태로 업데이트
 		- git fetch origin
 		  git merge origin/main
+- ### 마지막 리비전
+  collapsed:: true
+	- git reset
+	- git checkout .
+- ### 롤백
+	- revert
+	- rebase
+	- reset
+		- 돌아갈 ID에 놓고 reset 수행
+		- hard : 이전 완전 삭제
+		- mix : 로컬에 코드 uncommitted 상태로 남아있다
+- ### 브랜치
+	- #### 삭제
+		- 로컬 : git branch -D 브랜치명
+		- 원격 : git branch origin :브랜치명
+	- #### 생성
+		- git branch 브랜치명
+	- #### 이동
+		- git switch 브랜치명
+- ### 로그 수정
+	- 최신 커밋 로그 변경 : git commit --amend
+-

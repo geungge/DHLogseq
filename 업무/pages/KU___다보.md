@@ -1,0 +1,7 @@
+- 20231218
+	- MBD
+		- 정상적이라면 R-AUTO 와 SimulLink 붙어야한다
+	- SRS
+		-
+	- BSW
+		-

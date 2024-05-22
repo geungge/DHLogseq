@@ -69,6 +69,7 @@
 		- BSMax
 			- 수신 측에서 Flow Control Frame을 받은 후, 다음 Flow Control Frame을 받기 전까지 순시할 수 있는 연속 Frame의 개수
 - 인터넷 자료
+  collapsed:: true
 	- [자동차 통신 CAN (Controller Area Network) 통신 소개 및 동작 방법 :: 자율주행 자동차 (tistory.com)](https://weeklylife.tistory.com/26)
 	- [AUTOSAR CAN Frame, PDU, Signal 통신 : 네이버 블로그 (naver.com)](https://m.blog.naver.com/techref/222435471400)
 	- [CAN (Controller Area Network) : 네이버 블로그 (naver.com)](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=hanbulkr&logNo=221329481315)
@@ -198,6 +199,7 @@
 									- Can_Ipw_ParseData
 										- CanIf_RxIndication
 - CAN FD
+  collapsed:: true
 	- ![image.png](../assets/image_1695621364421_0.png)
 	- BRS : Control field 와 Data field 비트 속도 up
 	- FDF : 1이면 CAN FD frame
@@ -208,6 +210,7 @@
 		- 29bit : extended
 	- [CAN FD Protocol Tutorial | Kvaser](https://www.kvaser.com/can-fd-protocol-tutorial/)
 - Physical / Functional
+  collapsed:: true
 	- DIAG Functional Can Rx ID : 0x7DF (GST_ALL)
 	- DIAG physical Can Rx ID : 0x705
 	- DIAG physical Can Tx ID : 0x70D
@@ -215,11 +218,13 @@
 	- Functional : 모든 제어기들에 한번에 보낼 때
 	-
 - ### Partial Network
+  collapsed:: true
 	- [CAN 노드의 부분 비활성화 (autoelectronics.co.kr)](https://www.autoelectronics.co.kr/article/articleView.asp?idx=959)
 		- 특정 웨이크업 메시지를 감지할 수 있어야 한다
 		- 오실레이터의 정밀도가 중요하다
 	- [How Selective Wake Enables Partial Networking (Rev. B)](https://www.ti.com/lit/an/slla521b/slla521b.pdf?ts=1699426613143&ref_url=https%253A%252F%252Fwww.google.com%252F)
 - WUF vs WUP
+  collapsed:: true
 	- [icc_2017_slides_hell.pdf (can-cia.org)](https://www.can-cia.org/fileadmin/resources/documents/slides/icc_2017_slides_hell.pdf)
 	- https://support.vector.com/kb?id=kb_article_view&sysparm_article=KB0012123
 	- WUP
@@ -232,3 +237,13 @@
 			- CEFF : RFR +FDF+r0
 			- FBFF
 			- FEFF
+- 리세시브 vs 도미넌트
+	- [CAN 통신의 개요 (Controller Area Network)](https://m.blog.naver.com/lagrange0115/221941482740)
+	- CANTX = 1 : 리세시스 2.5V 
+	  CANTX = 0 : 도미넌트 1.5V ~ 3.5V
+	- 회로적으로 도미넌트의 우선순위가 높다
+	  arbitration phase에서 낮은 ID를 가진 node가 우선순위를 가지고 출력되고
+	  자신의 출력파형과 다른 node는 출력을 멈춰야 한다.
+	- [CAN (Controller Area Network)](https://blog.naver.com/bycho211/221029297220)
+-
+	-

@@ -171,7 +171,6 @@ collapsed:: true
 			- Support DmCOntrol on abnormal voltage
 			- Bus Lad Detecting
 - ### 현재 (2023.10.16)
-  collapsed:: true
 	- MCU Mask set  : Future 문의
 	- CPU Clock : 최대 사용 clock을 적는 것인가? 아니면 사용 clock을 적는 것인가? 추후 변경이 가능한가?
 	- Controlled RAM : run time 중에 사용? 추후 on/off 가능?

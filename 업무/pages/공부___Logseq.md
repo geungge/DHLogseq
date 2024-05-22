@@ -4,7 +4,11 @@
 	- 페이지 :  [[KU]]
 	- 블럭
 - ### 검색
-	- {{query "SUP"}}
+	- {{query "XCP"}}
 	  collapsed:: true
 - ### 주석
+-
+- ### 수식
+	- [마크 다운  수식(TEX) 정리](https://rayc20.tistory.com/151)
+	-
 -
